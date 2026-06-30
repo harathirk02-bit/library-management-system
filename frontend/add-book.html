@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Book | Library Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>📚 Library</h2>
+
+        <ul>
+
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li><a class="active" href="add-book.html"><i class="fa-solid fa-book-medical"></i> Add Book</a></li>
+
+            <li><a href="books.html"><i class="fa-solid fa-book"></i> View Books</a></li>
+
+            <li><a href="issue-book.html"><i class="fa-solid fa-hand-holding"></i> Issue Book</a></li>
+
+            <li><a href="return-book.html"><i class="fa-solid fa-rotate-left"></i> Return Book</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-users"></i> Members</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <div class="topbar">
+
+            <div>
+                <h1>Add New Book</h1>
+                <p class="subtitle">Library Management System</p>
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                Librarian
+            </div>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>Add Book Details</h2>
+
+            <form>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Book Title</label>
+
+                        <input
+                        type="text"
+                        placeholder="Enter Book Title">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Author Name</label>
+
+                        <input
+                        type="text"
+                        placeholder="Enter Author Name">
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Category</label>
+
+                        <input
+                        type="text"
+                        placeholder="Programming">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>ISBN Number</label>
+
+                        <input
+                        type="text"
+                        placeholder="978-1234567890">
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Publication Year</label>
+
+                        <input
+                        type="number"
+                        placeholder="2026">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Quantity</label>
+
+                        <input
+                        type="number"
+                        value="1">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Description</label>
+
+                    <textarea
+                    rows="5"
+                    placeholder="Write a short description about the book..."></textarea>
+
+                </div>
+
+                <button class="btn" type="submit">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Book
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

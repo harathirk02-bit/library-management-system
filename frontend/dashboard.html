@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Font Awesome (IMPORTANT FIX) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="books.html">View Books</a>
+        <a href="issue-book.html">Issue Book</a>
+        <a href="return-book.html">Return Book</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Dashboard</h2>
+
+    <!-- CARDS SECTION -->
+    <div class="cards">
+
+        <div class="card blue">
+            <i class="fa-solid fa-book fa-2x"></i>
+            <h3>Total Books</h3>
+            <p>5</p>
+        </div>
+
+        <div class="card green">
+            <i class="fa-solid fa-circle-check fa-2x"></i>
+            <h3>Available</h3>
+            <p>3</p>
+        </div>
+
+        <div class="card purple">
+            <i class="fa-solid fa-book-open fa-2x"></i>
+            <h3>Issued</h3>
+            <p>2</p>
+        </div>
+
+        <div class="card orange">
+            <i class="fa-solid fa-users fa-2x"></i>
+            <h3>Members</h3>
+            <p>5</p>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+    if (typeof loadDashboard === "function") {
+        loadDashboard();
+    }
+</script>
+
+</body>
+</html>

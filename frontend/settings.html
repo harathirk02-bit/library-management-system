@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Library System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="books.html">View Books</a>
+        <a href="issue-book.html">Issue Book</a>
+        <a href="return-book.html">Return Book</a>
+        <a href="members.html">Members</a>
+        <a href="reports.html">Reports</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Settings</h2>
+
+    <!-- PROFILE SETTINGS -->
+    <div class="form-container">
+
+        <h3><i class="fa-solid fa-user-gear"></i> Profile Settings</h3>
+
+        <input type="text" placeholder="Librarian Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+
+        <button onclick="saveProfile()">Save Profile</button>
+    </div>
+
+    <!-- PASSWORD CHANGE -->
+    <div class="form-container">
+
+        <h3><i class="fa-solid fa-lock"></i> Change Password</h3>
+
+        <input type="password" placeholder="Old Password" id="oldPass">
+        <input type="password" placeholder="New Password" id="newPass">
+        <input type="password" placeholder="Confirm Password" id="confirmPass">
+
+        <button onclick="changePassword()">Update Password</button>
+    </div>
+
+    <!-- SYSTEM INFO -->
+    <div class="table-container">
+
+        <h3>System Information</h3>
+
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Project Name</td>
+                <td>Library Management System</td>
+            </tr>
+
+            <tr>
+                <td>Version</td>
+                <td>1.0</td>
+            </tr>
+
+            <tr>
+                <td>Backend</td>
+                <td>Node.js (future)</td>
+            </tr>
+
+            <tr>
+                <td>Database</td>
+                <td>MongoDB (future)</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+    function saveProfile() {
+        alert("Profile saved successfully!");
+    }
+
+    function changePassword() {
+        let oldPass = document.getElementById("oldPass").value;
+        let newPass = document.getElementById("newPass").value;
+        let confirmPass = document.getElementById("confirmPass").value;
+
+        if(newPass !== confirmPass){
+            alert("Passwords do not match!");
+            return;
+        }
+
+        if(oldPass === "" || newPass === ""){
+            alert("Please fill all fields!");
+            return;
+        }
+
+        alert("Password updated successfully!");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - Library System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="books.html">View Books</a>
+        <a href="issue-book.html">Issue Book</a>
+        <a href="return-book.html">Return Book</a>
+        <a href="members.html">Members</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Members</h2>
+
+    <!-- ADD MEMBER FORM -->
+    <div class="form-container">
+
+        <h3>Add New Member</h3>
+
+        <input type="text" id="memberName" placeholder="Member Name">
+        <input type="email" id="memberEmail" placeholder="Email">
+        <input type="text" id="memberPhone" placeholder="Phone Number">
+
+        <button onclick="addMember()">Add Member</button>
+    </div>
+
+    <!-- MEMBERS TABLE -->
+    <div class="table-container">
+
+        <h3>Member List</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="membersTable">
+                <!-- Dynamic rows will come here -->
+            </tbody>
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+    loadMembers();
+</script>
+
+</body>
+</html>

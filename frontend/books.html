@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Books</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>📚 Library</h2>
+
+        <ul>
+
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li><a href="add-book.html"><i class="fa-solid fa-book-medical"></i> Add Book</a></li>
+
+            <li><a class="active" href="books.html"><i class="fa-solid fa-book"></i> View Books</a></li>
+
+            <li><a href="issue-book.html"><i class="fa-solid fa-hand-holding"></i> Issue Book</a></li>
+
+            <li><a href="return-book.html"><i class="fa-solid fa-rotate-left"></i> Return Book</a></li>
+            <li><a href="members.html">Members</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="settings.html">Settings</a></li>
+
+            
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <div class="topbar">
+
+            <div>
+                <h1>View Books</h1>
+                <p class="subtitle">Manage Library Books</p>
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                Librarian
+            </div>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="box">
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:15px;">
+
+                <input
+                    type="text"
+                    placeholder="🔍 Search by Book Name..."
+                    style="width:320px;padding:12px;border:1px solid #ccc;border-radius:10px;">
+
+                <a href="add-book.html" class="btn" style="text-decoration:none;">
+                    <i class="fa-solid fa-plus"></i>
+                    Add New Book
+                </a>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Book Name</th>
+
+                        <th>Author</th>
+
+                        <th>Category</th>
+
+                        <th>Quantity</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Atomic Habits</td>
+
+                        <td>James Clear</td>
+
+                        <td>Self Help</td>
+
+                        <td>15</td>
+
+                        <td><span style="color:green;font-weight:bold;">Available</span></td>
+
+                        <td>
+
+                            <button class="btn" style="background:#16a34a;">Edit</button>
+
+                            <button class="btn" style="background:#dc2626;">Delete</button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+
+                        <td>The Alchemist</td>
+
+                        <td>Paulo Coelho</td>
+
+                        <td>Novel</td>
+
+                        <td>8</td>
+
+                        <td><span style="color:green;font-weight:bold;">Available</span></td>
+
+                        <td>
+
+                            <button class="btn" style="background:#16a34a;">Edit</button>
+
+                            <button class="btn" style="background:#dc2626;">Delete</button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>3</td>
+
+                        <td>Rich Dad Poor Dad</td>
+
+                        <td>Robert Kiyosaki</td>
+
+                        <td>Finance</td>
+
+                        <td>5</td>
+
+                        <td><span style="color:orange;font-weight:bold;">Low Stock</span></td>
+
+                        <td>
+
+                            <button class="btn" style="background:#16a34a;">Edit</button>
+
+                            <button class="btn" style="background:#dc2626;">Delete</button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

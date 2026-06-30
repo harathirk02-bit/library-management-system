@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <h2><i class="fa-solid fa-book-open-reader"></i> Library</h2>
+
+        <ul>
+
+            <li>
+                <a class="active" href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="add-book.html">
+                    <i class="fa-solid fa-book-medical"></i>
+                    Add Book
+                </a>
+            </li>
+
+            <li>
+                <a href="books.html">
+                    <i class="fa-solid fa-book"></i>
+                    View Books
+                </a>
+            </li>
+
+            <li>
+                <a href="issue-book.html">
+                    <i class="fa-solid fa-hand-holding"></i>
+                    Issue Book
+                </a>
+            </li>
+
+            <li>
+                <a href="return-book.html">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Return Book
+                </a>
+            </li>
+
+            <!-- FIXED LINKS -->
+            <li>
+                <a href="members.html">
+                    <i class="fa-solid fa-users"></i>
+                    Members
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+
+            <div>
+                <h1>📚 Dashboard</h1>
+                <p class="subtitle">Welcome to Library Management System</p>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search books...">
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                Librarian
+            </div>
+
+        </div>
+
+        <!-- ================= CARDS ================= -->
+        <div class="cards">
+
+            <div class="card blue">
+                <i class="fa-solid fa-book fa-2x"></i>
+                <h3>Total Books</h3>
+                <p>245</p>
+            </div>
+
+            <div class="card green">
+                <i class="fa-solid fa-circle-check fa-2x"></i>
+                <h3>Available</h3>
+                <p>180</p>
+            </div>
+
+            <div class="card purple">
+                <i class="fa-solid fa-book-open fa-2x"></i>
+                <h3>Issued</h3>
+                <p>65</p>
+            </div>
+
+            <div class="card orange">
+                <i class="fa-solid fa-users fa-2x"></i>
+                <h3>Members</h3>
+                <p>120</p>
+            </div>
+
+        </div>
+
+        <!-- ================= TABLES ================= -->
+        <div class="section">
+
+            <!-- Recently Added Books -->
+            <div class="box">
+
+                <h2>📖 Recently Added Books</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Atomic Habits</td>
+                            <td>James Clear</td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>The Alchemist</td>
+                            <td>Paulo Coelho</td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Rich Dad Poor Dad</td>
+                            <td>Robert Kiyosaki</td>
+                            <td><span class="status issued">Issued</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Recently Issued Books -->
+            <div class="box">
+
+                <h2>📚 Recently Issued Books</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>Student</th>
+                            <th>Return Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Deep Work</td>
+                            <td>Rahul</td>
+                            <td>15 Jul 2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ikigai</td>
+                            <td>Priya</td>
+                            <td>18 Jul 2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>5 AM Club</td>
+                            <td>Arjun</td>
+                            <td>20 Jul 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Library System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="books.html">View Books</a>
+        <a href="issue-book.html">Issue Book</a>
+        <a href="return-book.html">Return Book</a>
+        <a href="members.html">Members</a>
+        <a href="reports.html">Reports</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Reports Dashboard</h2>
+
+    <!-- REPORT CARDS -->
+    <div class="cards">
+
+        <div class="card blue">
+            <i class="fa-solid fa-book fa-2x"></i>
+            <h3>Total Books</h3>
+            <p id="totalBooks">5</p>
+        </div>
+
+        <div class="card green">
+            <i class="fa-solid fa-circle-check fa-2x"></i>
+            <h3>Available Books</h3>
+            <p id="availableBooks">3</p>
+        </div>
+
+        <div class="card purple">
+            <i class="fa-solid fa-book-open fa-2x"></i>
+            <h3>Issued Books</h3>
+            <p id="issuedBooks">2</p>
+        </div>
+
+        <div class="card orange">
+            <i class="fa-solid fa-users fa-2x"></i>
+            <h3>Total Members</h3>
+            <p id="totalMembers">5</p>
+        </div>
+
+    </div>
+
+    <!-- REPORT TABLE -->
+    <div class="table-container">
+
+        <h3>Library Summary Report</h3>
+
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Count</th>
+            </tr>
+
+            <tr>
+                <td>Total Books</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Available Books</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Issued Books</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>Total Members</td>
+                <td>5</td>
+            </tr>
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+    loadReports();
+</script>
+
+</body>
+</html>

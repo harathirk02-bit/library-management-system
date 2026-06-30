@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book | Library Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>📚 Library</h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="add-book.html">
+                    <i class="fa-solid fa-book-medical"></i>
+                    Add Book
+                </a>
+            </li>
+
+            <li>
+                <a href="books.html">
+                    <i class="fa-solid fa-book"></i>
+                    View Books
+                </a>
+            </li>
+
+            <li>
+                <a href="issue-book.html">
+                    <i class="fa-solid fa-hand-holding"></i>
+                    Issue Book
+                </a>
+            </li>
+
+            <li>
+                <a class="active" href="return-book.html">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Return Book
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Members
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <div class="topbar">
+
+            <div>
+                <h1>Return Book</h1>
+                <p class="subtitle">Manage Returned Books</p>
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                Librarian
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Issued Books</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Book Name</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Fine</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+                        <td>Rahul</td>
+                        <td>Atomic Habits</td>
+                        <td>01-07-2026</td>
+                        <td>15-07-2026</td>
+                        <td>₹0</td>
+                        <td>
+                            <button class="btn" style="background:#16a34a;">
+                                Return
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+                        <td>Priya</td>
+                        <td>The Alchemist</td>
+                        <td>28-06-2026</td>
+                        <td>12-07-2026</td>
+                        <td>₹20</td>
+                        <td>
+                            <button class="btn" style="background:#16a34a;">
+                                Return
+                            </button>
+                        </td>
+
+                    </tr>
+                                        <tr>
+
+                        <td>3</td>
+                        <td>Arjun</td>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>25-06-2026</td>
+                        <td>09-07-2026</td>
+                        <td>₹50</td>
+                        <td>
+                            <button class="btn" style="background:#16a34a;">
+                                Return
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>4</td>
+                        <td>Sneha</td>
+                        <td>Deep Work</td>
+                        <td>02-07-2026</td>
+                        <td>16-07-2026</td>
+                        <td>₹0</td>
+                        <td>
+                            <button class="btn" style="background:#16a34a;">
+                                Return
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>5</td>
+                        <td>Kiran</td>
+                        <td>Ikigai</td>
+                        <td>30-06-2026</td>
+                        <td>14-07-2026</td>
+                        <td>₹10</td>
+                        <td>
+                            <button class="btn" style="background:#16a34a;">
+                                Return
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
